@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 10px;
+}
+
+.hamburger {
+    visibility: hidden;
+    width: 35px;
+    height: 30px;
+    border: none;
+    border-top: 3px solid #75ad8d;
+    background: transparent;
+    position: relative;
+    transition: 0.3s transform linear;
+    margin-bottom: 5%;
+}
+
+button:focus {
+    outline: none;
+}
+
+.hamburger::before, .hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 3px solid #75ad8d;
+    transform: translateY(10px);
+}
+
+.hamburger::after {
+    transform: translateY(25px);
+    transition: 0.3s transform linear;
+}
+
+.hamburger:hover {
+    width: 40px;
+    height: 30px;
+    transition: 0.5s;
+    transform: rotate(90deg);
+}
+
+.all {
+    padding: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: #80af4a;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 120%;
+    padding: 30px;
+}
+
+a:hover {
+    color: #436543;
+    transition-duration: 1.5s;
+}
+
+a:active {
+    color: black;
+}
+
+@media (max-width: 640px) {
+    .links {
+        display: none;
+        font-size: 10px;
+    }
+    a {
+        display: block;
+        padding: 3px;
+    }
+    .hamburger {
+        visibility: visible;
+    }
+    .visible {
+        visibility: visible;
+    }
+    .owl-nav {
+        visibility: hidden;
+    }
+    .item {
+        min-width: 200%;
+    }
+}
+
+@media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    .links {
+        padding: 5% 5% 10% 5%;
+        display: initial;
+    }
+}
+
+hr {
+    margin-top: 5%;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+#cat {
+    display: inline-block;
+    margin: 3.5%;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+}
+
+#cat:active {
+    color: grey;
+}
+
+#cat:hover {
+    cursor: pointer;
+    transition-duration: 1.5s;
+}
+
+.cat0:hover {
+    background-color: black;
+    color: white;
+}
+
+.cat1 {
+    color: #75ad8d;
+}
+
+.cat1:hover {
+    background-color: #75ad8d;
+    color: white;
+}
+
+.cat2 {
+    color: #7fdec6;
+}
+
+.cat2:hover {
+    background-color: #7fdec6;
+    color: white;
+}
+
+.cat3 {
+    color: #a1e290;
+}
+
+.cat3:hover {
+    background-color: #a1e290;
+    color: white;
+}
+
+.cat4 {
+    color: #bcd88b;
+}
+
+.cat4:hover {
+    background-color: #bcd88b;
+    color: white;
+}
+
+#dot {
+    display: block;
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    margin: 5%;
+}
+
+.one {
+    background-color: #75ad8d;
+}
+
+.two {
+    background-color: #7fdec6;
+}
+
+.three {
+    background-color: #a1e290;
+}
+
+.four {
+    background-color: #bcd88b;
+}
+
+.owl-carousel .item {
+    padding: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.flex-container>div {
+    background-color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.owl-nav {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+.owl-prev {
+    color: #3c5025;
+}
+
+.owl-prev:hover {
+    color: grey;
+    transition: 0.5s;
+}
+
+.owl-next {
+    color: #75ad8d;
+}
+
+.owl-next:hover {
+    color: #3c5025;
+    transition: 0.5s;
+}
+
+img {
+    border-radius: 15%;
+}
+
+img:hover {
+    opacity: 0.70;
+    transition-duration: 0.5s;
+}
+
+.cloned {
+    visibility: hidden;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+    <button class="hamburger"></button>
+    <nav class="links">
+        <a href="#plan">Zaplanuj wycieczkę</a>
+        <a href="#atractions">Atrakcje regionu</a>
+    </nav>
+    <hr>
+    <div class="all">
+        <section class="plan">
+            <h2 id="plan">Zaplanuj wycieczkę</h2>
+            <div class="categories">
+                <p class="cat0" id="cat">Wszystkie</p>
+                <p class="cat1" id="cat">Afryka</p>
+                <p class="cat2" id="cat">Azja</p>
+                <p class="cat3" id="cat">Europa</p>
+                <p class="cat4" id="cat">Memy</p>
+            </div>
+            <div class="dots">
+                <span class="one" id="dot"></span>
+                <span class="two" id="dot"></span>
+                <span class="three" id="dot"></span>
+                <span class="three" id="dot"></span>
+                <span class="two" id="dot"></span>
+                <span class="four" id="dot"></span>
+                <span class="one" id="dot"></span>
+                <span class="four" id="dot"></span>
+            </div>
+        </section>
+        <section class="atractions">
+            <h2 id="atractions">Atrakcje regionu</h2>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"
+                rel="stylesheet">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="flex-container">
+                        <div class="two"><img src="photo/asia.jpg">Lorem ipsum</div>
+                        <div class="four"><img src="photo/meme.jpg">Lorem ipsum</div>
+                        <div class="two"><img src="photo/asia.jpg">Lorem ipsum</div>
+                        <div class="one"><img src="photo/africa.jpg">Lorem ipsum</div>
+                        <div class="three"><img src="photo/europe.jpg">Lorem ipsum</div>
+                    </div>
+                    <div class="flex-container">
+                        <div class="four"><img src="photo/meme.jpg">Lorem ipsum</div>
+                        <div class="three"><img src="photo/europe.jpg">Lorem ipsum</divclass>
+                        </div>
+                        <div class="one"><img src="photo/africa.jpg">Lorem ipsum</div>
+                        <div class="three"><img src="photo/europe.jpg">Lorem ipsum</div>
+                        <div class="two"><img src="photo/asia.jpg">Lorem ipsum</div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="flex-container">
+                        <div class="three"><img src="photo/europe.jpg">Lorem ipsum</div>
+                        <div class="four"><img src="photo/meme.jpg">Lorem ipsum</div>
+                        <div class="two"><img src="photo/asia.jpg">Lorem ipsum</div>
+                        <div class="one"><img src="photo/africa.jpg">Lorem ipsum</div>
+                        <div class="three"><img src="photo/europe.jpg">Lorem ipsum</div>
+                    </div>
+                    <div class="flex-container">
+                        <div class="two"><img src="photo/asia.jpg">Lorem ipsum</div>
+                        <div class="two"><img src="photo/asia.jpg">Lorem ipsum</div>
+                        <div class="two"><img src="photo/asia.jpg">Lorem ipsum</div>
+                        <div class="four"><img src="photo/meme.jpg">Lorem ipsum</div>
+                        <div class="one"><img src="photo/africa.jpg">Lorem ipsum</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
